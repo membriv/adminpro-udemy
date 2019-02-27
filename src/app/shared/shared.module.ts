@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { RouterModule } from '@angular/router';
+import { PagesRoutingModule } from '../pages/pages-routing.module';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     RouterModule,
-    CommonModule
+    CommonModule,
+    PagesRoutingModule
   ]
 })
 export class SharedModule { }
